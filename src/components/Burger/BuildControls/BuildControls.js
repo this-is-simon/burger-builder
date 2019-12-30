@@ -2,7 +2,6 @@ import React from 'react';
 
 import classes from './BuildControls.module.css';
 import BuildControl from './BuildControl/BuildControl';
-import Aux from "../../../hoc/Aux";
 
 const controls = [
     {label: 'Salad', type: 'salad'},
