@@ -65,6 +65,10 @@ class BurgerBuilder extends Component {
         this.setState({purchasing: true})
     };
 
+    hideBackdropHandler = () => {
+        this.setState({purchasing: false})
+    };
+
     render () {
         const disabledToggle = {...this.state.ingredients};
         for (let key in disabledToggle) {
@@ -73,7 +77,7 @@ class BurgerBuilder extends Component {
 
         return (
             <Aux>
-                <Modal show={this.state.purchasing}>
+                <Modal show={this.state.purchasing} hideBackdrop={this.hideBackdropHandler}>
                     <OrderSummary ingredients={this.state.ingredients}/>
                 </Modal>
                 <Burger ingredients={this.state.ingredients} />
