@@ -16,10 +16,8 @@
     display: block;
 }
 
-.Navigation a:active,
-.Navigation a:hover,
-.Navigation a.active {
+.NavigationItem a:active, .NavigationItem a:hover, .NavigationItem a.active {
     background-color: #8F5c2c;
-    border-bottom: #40A4c8;
+    border-bottom: #40A4c8 4px solid;
     color: white;
 }
