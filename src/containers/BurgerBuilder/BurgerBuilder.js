@@ -70,7 +70,7 @@ class BurgerBuilder extends Component {
     };
 
     purchaseContinueHandler = () => {
-        alert('continue!')
+        console.log('continue')
     };
 
     render () {
