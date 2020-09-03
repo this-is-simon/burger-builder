@@ -12,7 +12,6 @@ import {connect} from "react-redux";
 
 class BurgerBuilder extends Component {
     state = {
-        // purchasable: false,
         purchasing: false
     };
 
@@ -28,7 +27,6 @@ class BurgerBuilder extends Component {
             .reduce((sum, el) => {
                 return sum + el
             }, 0);
-        // this.setState({purchasable: sum > 0})
         return sum > 0;
     };
 
@@ -87,9 +85,9 @@ class BurgerBuilder extends Component {
 
 const mapStateToProps = state => {
     return {
-        ings: state.ingredients,
-        totalPrice: state.totalPrice,
-        error: state.error
+        ings: state.burgerBuilder.ingredients,
+        totalPrice: state.burgerBuilder.totalPrice,
+        error: state.burgerBuilder.error
     };
 };
 
